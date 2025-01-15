@@ -64,8 +64,8 @@ void Zero_Matrix(int mtrx[][M]) // mtrx is an M x N matrix
         {
             if(mtrx[n][m] == 0) // if select int in mtrx is 0
             {
-                row[counter]=m; // save the row index m in row
-                col[counter++]=n; // save the col index n in col
+                row[counter]=m; // save row index m in row
+                col[counter++]=n; // save col index n in col
             }
         }
     }
