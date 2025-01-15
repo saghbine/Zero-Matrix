@@ -52,7 +52,7 @@ void print_matrix(int mtrx[][M])
     cout<<endl;
 }
 
-void Zero_Matrix(int mtrx[][M]) // mtrx is an M x N matrix
+void Zero_Matrix(int mtrx[][M]) // mtrx is input matrix
 {
     int row[M]; // temporary row, int array of size M
     int col[N]; // temporary col, int array of size N
