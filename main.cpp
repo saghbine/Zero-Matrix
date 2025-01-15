@@ -65,7 +65,7 @@ void Zero_Matrix(int mtrx[][M]) // mtrx is input matrix
             if(mtrx[n][m] == 0) // if select int in mtrx is 0
             {
                 row[counter]=m; // save row index m in row
-                col[counter++]=n; // save col index n in col
+                col[counter++]=n; // save col index n in col, increment counter to count and move to next index
             }
         }
     }
@@ -75,13 +75,13 @@ void Zero_Matrix(int mtrx[][M]) // mtrx is input matrix
         for(int i=0; i < N; i++) // check saved col indices while row index is constant
         {
             if(mtrx[i][row[c]] != 0) // if select int in mtrx isn't 0
-                mtrx[i][row[c]]=0; // set select int in mtrx to 0
+                mtrx[i][row[c]]=0; // set it to 0
         }
         
         for(int i=0; i < M; i++) // check saved row indices while col index is constant
         {
             if(mtrx[col[c]][i] != 0) // if select int in mtrx isn't 0
-                mtrx[col[c]][i]=0; // set select int in mtrx to 0
+                mtrx[col[c]][i]=0; // set it to 0
         }
     }
     
